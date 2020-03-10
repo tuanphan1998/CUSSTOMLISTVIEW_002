@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sửa đổi"
+        android:id="@+id/edt_name"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="22dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thay đổi giá tiền"
+        android:layout_below="@+id/edt_name"
+        android:id="@+id/edt_price"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="22dp"></EditText>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:layout_below="@+id/edt_price"
+        android:layout_marginLeft="22dp"
+        android:id="@+id/btn_edit"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐẶT HÀNG"
+        android:layout_toRightOf="@+id/btn_edit"
+        android:layout_below="@+id/edt_price"
+        android:layout_marginLeft="22dp"
+        android:id="@+id/btn_pay"></Button>
+
+    <ListView
+        android:layout_below="@+id/btn_edit"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_food"></ListView>
+
+
+</RelativeLayout>
